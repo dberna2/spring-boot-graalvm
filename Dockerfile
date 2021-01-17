@@ -23,7 +23,7 @@ RUN source "$HOME/.sdkman/bin/sdkman-init.sh" && mvn -Pnative clean package
 # We use a Docker multi-stage build here in order to only take the compiled native Spring Boot App from the first build container
 FROM oraclelinux:7-slim
 
-# Add Spring Boot Native app spring-boot-graal to Container
+# Add Spring Boot Native app spring-boot-graalvm to Container
 COPY --from=0 "/build/target/spring-boot-graalvm" spring-boot-graalvm
 
 # Fire up our Spring Boot Native app by default
