@@ -1813,9 +1813,6 @@
   "name":"org.springframework.boot.autoconfigure.data.neo4j.Neo4jDataAutoConfiguration"
 },
 {
-  "name":"org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration"
-},
-{
   "name":"org.springframework.boot.autoconfigure.freemarker.FreeMarkerTemplateAvailabilityProvider",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
@@ -2068,7 +2065,7 @@
   "allDeclaredConstructors":true
 },
 {
-  "name":"org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$542/0x00000008403ba840",
+  "name":"org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration$$Lambda$542/0x00000008403bf840",
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "methods":[{"name":"getDataSourcePoolMetadata","parameterTypes":["javax.sql.DataSource"] }]
@@ -3296,6 +3293,9 @@
   "name":"org.springframework.data.util.Streamable",
   "allDeclaredMethods":true,
   "allPublicMethods":true
+},
+{
+  "name":"org.springframework.data.web.PageableHandlerMethodArgumentResolver"
 },
 {
   "name":"org.springframework.format.FormatterRegistry",

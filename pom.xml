@@ -110,10 +110,11 @@
                         <version>${native-image-maven-plugin.version}</version>
                         <configuration>
                             <buildArgs>
-                                -J-Xmx4G -Dspring.graal.mode=initialization-only --no-fallback --no-server
-                                -H:+TraceClassInitialization -H:+ReportExceptionStackTraces
-                                -Dspring.graal.skip-logback=true -Dspring.native.remove-yaml-support=true
+                                -J-Xmx12G -H:+TraceClassInitialization -H:+ReportExceptionStackTraces
+                                -Dspring.native.remove-unused-autoconfig=true
+                                -Dspring.native.remove-yaml-support=true
                                 -Dspring.spel.ignore=true -Dspring.xml.ignore=true
+                                --no-fallback --no-server
                                 --initialize-at-build-time=sun.instrument.InstrumentationImpl
                             </buildArgs>
                             <imageName>${project.artifactId}</imageName>

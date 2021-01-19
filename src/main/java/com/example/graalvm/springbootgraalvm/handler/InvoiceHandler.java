@@ -23,12 +23,4 @@ public class InvoiceHandler {
                 .contentType(APPLICATION_JSON)
                 .body(invoiceService.getAllInvoices(), Invoice.class);
     }
-
-    public Mono<ServerResponse> getInvoiceById(ServerRequest request) {
-        Long invoiceId = Long.parseLong(request.pathVariable("id"));
-        return ServerResponse.ok()
-                .contentType(APPLICATION_JSON)
-                .body(invoiceService.getInvoiceById(invoiceId), Invoice.class);
-
-    }
 }

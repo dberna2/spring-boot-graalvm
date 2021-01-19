@@ -17,7 +17,7 @@ public class InvoiceRouter {
     @Bean
     public RouterFunction<ServerResponse> routeFunction(InvoiceHandler invoiceHandler) {
         return route(
-                GET("/invoice").and(accept(TEXT_PLAIN)), invoiceHandler::getAllInvoices)
-                .andRoute(GET("/invoice/{id}").and(accept(TEXT_PLAIN)), invoiceHandler::getInvoiceById);
+                GET("/invoice").and(accept(TEXT_PLAIN)), invoiceHandler::getAllInvoices
+        );
     }
 }

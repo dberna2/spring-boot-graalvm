@@ -14,14 +14,9 @@ CREATE TABLE INVOICES (
 );
 
 INSERT INTO INVOICES (CREATION_DATE) VALUES
-('2021-01-11'),
-('2021-01-12'),
-('2021-01-12'),
-('2021-01-12'),
-('2021-01-12'),
-('2021-01-13'),
-('2021-01-16');
+('2021-01-11'), ('2021-01-12'), ('2021-01-13');
 
 INSERT INTO ITEMS(NAME, AMOUNT, INVOICE_ID) VALUES
-('Iphone', 1000, 1),
-('TV LG', 2300, 1)
+('Iphone', 1000, 1), ('TV LG', 2300, 1),
+('MacBook Pro', 2586, 2),
+('mouse', 20, 3), ('Keyboard', 15, 3);
